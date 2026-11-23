@@ -86,3 +86,5 @@ html{scroll-behavior:auto}.v2-hero{padding-right:0}.v2-hero h1,.v2-hero .v2-lead
 /* Hero follows the shared section rhythm instead of filling the viewport. */
 .v2-header{position:relative;inset:auto}
 .portfolio-main>.v2-hero{height:auto;min-height:0;padding-block:var(--section-space);justify-content:flex-start}
+
+.project-preview video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#17232b}.project-description h4{font-size:13px;font-weight:600;margin:20px 0 8px}

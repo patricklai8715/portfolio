@@ -116,3 +116,10 @@ html{scroll-behavior:auto}.v2-hero{padding-right:0}.v2-hero h1,.v2-hero .v2-lead
 .v2-project>.project-preview{width:100%;height:auto;aspect-ratio:3/2;max-height:none;background:#e9eddf;overflow:hidden}
 .v2-project>.project-preview img,.v2-project>.project-preview video{display:block;width:100%;height:100%;max-height:none;aspect-ratio:auto;object-fit:contain}
 .closing .button:focus-visible{color:#f7f7f0}
+/* Full-stack positioning: compact technology context within existing sections. */
+.hero-tech{font-size:13px;line-height:1.7;color:var(--muted);max-width:58%;margin:18px 0}
+.capability-stack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+.capability-stack h3{font-size:16px;font-weight:600;margin:0 0 10px}
+.capability-stack p{font-size:13px;line-height:1.8;color:var(--muted);margin:0;overflow-wrap:anywhere}
+@media(min-width:768px) and (max-width:1099px){.hero-tech{max-width:56%}}
+@media(max-width:767px){.hero-tech{max-width:100%;font-size:12px}.capability-stack{grid-template-columns:1fr;gap:20px}}

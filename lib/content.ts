@@ -6,7 +6,7 @@ export const profile = {
   email: 'pakilai0715@gmail.com',
 };
 export const experiences = [
-  { period: 'September 2025 - Present', company: 'Freelance', role: 'Freelance Web Developer', description: 'Web applications, Shopify themes, and workflow integrations with n8n, Zapier, or custom APIs.' },
+  { period: 'September 2025 - Present', company: 'Freelance', role: 'Freelance Web Developer', description: 'Full-stack web applications with responsive interfaces, backend APIs, databases, access control, testing, and deployment.' },
   { period: 'September 2021 - September 2025', company: 'JD', role: 'Front-End Developer', description: 'Front-end engineering experience at JD, working on established products.' },
   { period: 'August 2019 - September 2021', company: 'SHEIN', role: 'Front-End Developer', description: 'Front-end engineering experience at SHEIN. My portfolio includes its global e-commerce experience for desktop and PWA.' },
   { period: 'July 2015 - August 2019', company: 'uCloudlink', role: 'Front-End Developer', description: 'Previous front-end development role at uCloudlink.' },
@@ -17,14 +17,13 @@ export const gallery: {title:string; image?:string; tags:string[]}[] = [
   { title: 'Customer Relationship Management System', image: '/images/crm.jpg', tags: ['React', 'Tailwind CSS', 'Next.js', 'PostgreSQL'] },
 ];
 export const stack = [
-  { group: '01 / FRONTEND', title: 'Frontend', items: ['React', 'Vue.js', 'Next.js', 'TypeScript', 'Tailwind CSS'], symbol: '</>' },
-  { group: '02 / BACKEND', title: 'Backend & APIs', items: ['Node.js', 'ExpressJS', 'Python', 'Custom APIs'], symbol: '{ }' },
-  { group: '03 / COMMERCE', title: 'E-commerce & CMS', items: ['Shopify Liquid', 'WordPress'], symbol: '▤' },
-  { group: '04 / AUTOMATION', title: 'Workflow Automation', items: ['n8n', 'Zapier', 'Make'], symbol: '⚙' },
+  { group: '01 / FRONTEND', title: 'Frontend', items: ['Vue.js', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS'], symbol: '</>' },
+  { group: '02 / BACKEND', title: 'Backend', items: ['Node.js', 'Python', 'FastAPI', 'Express'], symbol: '{ }' },
+  { group: '03 / DATA AND DELIVERY', title: 'Data And Delivery', items: ['Cloudflare D1', 'Database Migrations', 'Testing', 'Cloudflare Deployment'], symbol: '▤' },
 ];
 export const steps = [
-  { title: 'Discovery', text: 'I review your Figma designs, requirements, or existing codebase, and we align on scope, timeline, and success criteria for the finished work.' },
-  { title: 'Build', text: 'I break the work into small milestones and share working previews. You can test each feature and provide feedback early, while changes are still easy to make.' },
-  { title: 'Quality', text: 'I build responsive interfaces with reusable components and test key user journeys across the browsers and screen sizes your customers use. For automations, I also validate edge cases such as missing data or connected service failures.' },
-  { title: 'Delivery', text: 'I hand over the code and setup notes, walk you through the changes, and agree with you on any post-launch support you may need.' },
+  { title: 'Discovery', text: 'We define the user flows, features, data requirements, and acceptance criteria before agreeing on scope and milestones.' },
+  { title: 'Build', text: 'I develop the interface, APIs, database, and access controls in milestones. You review working previews and give feedback as each part is ready.' },
+  { title: 'Quality', text: 'I test the core business workflows, API behavior, and access controls, and check the interface across browsers and screen sizes.' },
+  { title: 'Delivery', text: 'I deploy the application and hand over the code, configuration, and setup documentation so you can run and maintain it.' },
 ];

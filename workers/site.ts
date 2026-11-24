@@ -9,8 +9,8 @@ export default {
   if(Number(request.headers.get('content-length')||0)>512)return new Response(null,{status:413});
   const text=await request.text();if(text.length>512)return new Response(null,{status:413});
   let body;try{body=JSON.parse(text)}catch{return new Response(null,{status:400})}
-  if(!events.has(body.event)||typeof body.path!=='string'||!/^\/(?:upwork\/)?(?:projects\/(?:shein|crm|hr-management)\/)?$/.test(body.path))return new Response(null,{status:400});
-  const project=['shein','crm','hr-management'].includes(body.project)?body.project:'';
+  if(!events.has(body.event)||typeof body.path!=='string'||!/^\/(?:upwork\/)?(?:projects\/(?:shein|crm|ones-performance)\/)?$/.test(body.path))return new Response(null,{status:400});
+  const project=['shein','crm','ones-performance'].includes(body.project)?body.project:'';
   if(!env.PORTFOLIO_EVENTS)return new Response(null,{status:503});
   env.PORTFOLIO_EVENTS.writeDataPoint({indexes:[body.event],blobs:[body.path,project],doubles:[1]});
   return new Response(null,{status:204,headers:{'Cache-Control':'no-store'}});

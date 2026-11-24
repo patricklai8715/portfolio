@@ -13,7 +13,7 @@ export const experiences = [
 ];
 export const gallery: {title:string; image?:string; tags:string[]}[] = [
   { title: 'SHEIN Global Fast-fashion E-commerce (PC & PWA)', image: '/images/shein.jpg', tags: ['Vue.js', 'Node.js', 'ExpressJS', 'SCSS'] },
-  { title: 'Human Resources Management System', image: '/images/hr-management.jpg', tags: ['React', 'Next.js', 'OpenAPI', 'Tailwind CSS'] },
+  { title: 'ONES Website Performance Optimization', image: '/images/ones-performance.webp', tags: ['Next.js', 'WebP', 'Responsive Images', 'Lazy Loading', 'CDN Caching', 'PageSpeed Insights'] },
   { title: 'Customer Relationship Management System', image: '/images/crm.jpg', tags: ['React', 'Tailwind CSS', 'Next.js', 'PostgreSQL'] },
 ];
 export const stack = [
